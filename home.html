@@ -1,23 +1,67 @@
-
 <html>
-  <head>
-    <title>Under Construstion</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+<head>
 
-<body style="background-color: #eee;">
-    
-  </head>
-  
-    <center><img src="https://assets.onlinelabels.com/images/clip-art/Leomarc/Leomarc_stop_sign.png" alt="Girl in a jacket" width="500" height="600"></center>
-    <h1><div class='txt'><center> Cdoby & Wbikers Webstie is curently under construction<br><br>Please come back later!</h1></div></center>
-    
 
-    <style>
-      .txt{
-        font-family: 'Open Sans', sans-serif;
-        font-size: 30px;
-        margin: 22%;
-      }
-  
-  </body>
+
+<script>function PopUp(){
+    document.getElementById('popup-background').style.display="none"; 
+}</script>
+<style>
+
+body {
+background-color:#000000;
+color: white;
+}
+
+#popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25,25,25,.8);
+    z-index: 1001;
+}
+
+#popup {
+    width: 770px;
+    height: 375px;
+    background: #666666;
+    border: 5px solid #000;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    box-shadow: #64686e 0px 0px 3px 3px;
+    -moz-box-shadow: #64686e 0px 0px 3px 3px;
+    -webkit-box-shadow: #64686e 0px 0px 3px 3px;
+    position: relative;
+    top: 150px; left: 375px;
+}
+
+</style>
+
+<title>Hidden Web</title>
+</head>
+<body>
+
+<!--popup-->
+<div id="popup-background">
+    <div id="popup">
+        <center>
+            <h1>Welcome To The Hidden Web!</h1>
+            <h2>We reccomend loging in for the best possible expeirience</h2>
+            <input type="submit" name="submit" value="Submit" onClick="PopUp()" />
+        </center>
+    </div>
+</div>
+
+<center>
+
+<!--content-->
+<p>hi</p>
+
+
+
+</center>
+</body>
+</html>
