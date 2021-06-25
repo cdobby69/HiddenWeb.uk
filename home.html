@@ -43,6 +43,20 @@ font-family: 'Barlow Condensed', sans-serif;
     top: 150px; left: 375px;
 }
 
+.popup-login {
+background-color: #555;
+color: white;
+font-size: 26px;
+padding: 16px 42px;
+}
+
+.popup-login:hover {
+background-color: #556;
+color: white;
+font-size: 36px;
+padding: 16px 42px;
+}
+
     .container {
   position: relative;
   width: 50%;
@@ -55,6 +69,7 @@ font-family: 'Barlow Condensed', sans-serif;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+float: left
 }
 
 .center {
@@ -79,8 +94,20 @@ font-family: 'Barlow Condensed', sans-serif;
 .login-button {
   background-color: #555;
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 36px;
+  padding: 26px 62px;
+}
+
+.sidebar {
+  position: ;
+  padding: 50px;
+  width: 250;
+  height: 500;
+  text-align: center;
+  background: grey;
+  color: black;
+  font-size: 20px;
+  float: left;
 }
 </style>
 
@@ -94,7 +121,17 @@ font-family: 'Barlow Condensed', sans-serif;
         <center>
             <h1>Welcome To The Hidden Web!</h1>
             <h2>We reccomend loging in for the best possible expeirience</h2>
-            <input style="background-color: #555; font-size: 30px; color: white; border-radius: 15px" type="submit" name="submit" value="DISMISS" onClick="PopUp()" />
+
+<br />
+<br />
+            <a href="pages/login.html"><button class="popup-login">Log In >>></button></a>
+<br />
+<br />
+<br />
+<br />
+<br />
+
+            <input style="background-color: #555; font-size: 30px; color: red; border-radius: 15px; padding: 6px 22px;" type="submit" name="submit" value="X" onClick="PopUp()" />
         </center>
     </div>
 </div>
@@ -105,11 +142,26 @@ font-family: 'Barlow Condensed', sans-serif;
 <p>hi</p>
 
 <div class="container">
-  <img src="img/hiddenwebplaceholder.png" alt="logo-main" class="logo-main" width=200; height=200>
+  <img src="https://cdobby69.github.io/HiddenWeb.uk/img/hiddenwebplaceholder.png" alt="logo-main" class="logo-main" width=200; height=200>
   <div class="center">
     <div class="login-button">Log In</div>
   </div>
 </div>
+
+<div class="sidebar">
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+</div>
+
 
 </center>
 </body>
