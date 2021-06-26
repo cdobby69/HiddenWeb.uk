@@ -1,5 +1,9 @@
 <html class="staticrypt-html"><head>
     <meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
     <title>Please Enter The Password</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,6 +15,10 @@
     <meta http-equiv="pragma" content="no-cache">
 
     <style>
+	    
+	    .textt{
+		    font-family: 'Nunito', sans-serif;
+	    }
     
     .text {
         color: white;
@@ -120,9 +128,8 @@
 <body class="staticrypt-body">
     <div class="text"><center><h1>Hidden Web Encryption</h1>
 <br>
-<h3>Hidden Web [Version 1.0]</h3><h2>
+<h3 class='textt'>Hidden Web [Version 1.0]</h3><h2>
     </h2><h3>2021 Wamb X Cdobby</h3><h2>
-        </h2><h3>All Rights Reserved</h3></center></div>
 <div class="staticrypt-page">
     <div class="staticrypt-form">
         <div class="staticrypt-instructions">
@@ -6162,7 +6169,6 @@
             iv: iv,
             padding: CryptoJS.pad.Pkcs7,
             mode: CryptoJS.mode.CBC
-        }).toString(CryptoJS.enc.Utf8);
         return decrypted;
     }
 
