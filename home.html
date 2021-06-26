@@ -59,47 +59,33 @@ padding: 16px 42px;
 
     .container {
   position: relative;
-  width: 50%;
-}
-
-.logo-main {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-float: left
 }
 
 .center {
-  transition: .5s ease;
-  opacity: 0;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  width: 100%;
   text-align: center;
+  font-size: 18px;
 }
 
-.container:hover .logo-main {
-  opacity: 0.3;
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 250;
+  height: 500;
+  text-align: center;
+  background: grey;
+  color: black;
+  font-size: 20px;
+  padding: 36px 46px
 }
 
-.container:hover .center {
-  opacity: 1;
-}
-
-.login-button {
-  background-color: #555;
-  color: white;
-  font-size: 36px;
-  padding: 26px 62px;
-}
-
-.sidebar {
-  position: ;
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
   padding: 50px;
   width: 250;
   height: 500;
@@ -107,8 +93,13 @@ float: left
   background: grey;
   color: black;
   font-size: 20px;
-  float: left;
+  padding: 36px 46px
 }
+
+#logo-main:hover {
+    content: url('https://cdobby69.github.io/HiddenWeb.uk/img/login.png');
+}
+
 </style>
 
 <title>Hidden Web</title>
@@ -142,26 +133,17 @@ float: left
 <p>hi</p>
 
 <div class="container">
-  <img src="https://cdobby69.github.io/HiddenWeb.uk/img/hiddenwebplaceholder.png" alt="logo-main" class="logo-main" width=200; height=200>
-  <div class="center">
-    <div class="login-button">Log In</div>
+  <div class="topright">Top Right
+  <br />
   </div>
+  <div class="topleft">Top Left
+    <br />
+      <br />
+        <br />
+          <br />
+  </div>
+   <div class="center"><img id="logo-main" src="https://cdobby69.github.io/HiddenWeb.uk/img/hiddenwebplaceholder.png" width= 500 height= 500></div>
 </div>
-
-<div class="sidebar">
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
-</div>
-
 
 </center>
 </body>
