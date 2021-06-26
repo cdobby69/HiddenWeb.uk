@@ -2,6 +2,9 @@
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
 
 
@@ -14,6 +17,14 @@
     document.getElementById('popup-background').style.display="none"; 
 }</script>
 <style>
+
+   .fonts{
+font-family: 'Akaya Kanadaka', cursive;
+font-size:33;
+
+}
+
+
     
     .h1title{
         color: white;
@@ -54,17 +65,19 @@ font-family: 'Barlow Condensed', sans-serif;
 
 .popup-login {
 background-color: #555;
+border: none;
 color: white;
 font-size: 26px;
-padding: 16px 42px;
+padding: 20px 42px;
     transition: 0.3s;
+border-radius: 30px;
 }
 
 .popup-login:hover {
 background-color: #556;
 color: white;
-font-size: 36px;
-padding: 16px 42px;
+font-size: 33px;
+padding: 15px 40px;
 }
 
     .container {
@@ -120,8 +133,8 @@ padding: 16px 42px;
 <div id="popup-background">
     <div id="popup">
         <center>
-            <h1>Welcome To The Hidden Web!</h1>
-            <h2>We reccomend loging in for the best possible expeirience</h2>
+            <h1 class="fonts">Welcome To The Hidden Web!</h1>
+            <h2 class="fonts">We reccomend loging in for the best possible expeirience</h2>
 
 <br />
 <br />
@@ -129,10 +142,10 @@ padding: 16px 42px;
 <br />
 <br />
 <br />
-<br />
-<br />
 
-            <input style="background-color: #555; font-size: 30px; color: red; border-radius: 15px; padding: 6px 22px;" type="submit" name="submit" value="X" onClick="PopUp()" />
+
+
+            <input style="background-color: #555; font-size: 30px; color: red; border: none; border-radius: 30px; padding: 6px 22px;" type="submit" name="submit" value="X" onClick="PopUp()" />
         </center>
     </div>
 </div>
