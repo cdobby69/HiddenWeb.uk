@@ -1,175 +1,214 @@
-<head>
 
+<html>
+<head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
 
-<title>Home | Hidden Web</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&display=swap" rel="stylesheet">
+
+
+<script>function PopUp(){
+    document.getElementById('popup-background').style.display="none"; 
+}</script>
 <style>
-  
-* {
-  box-sizing: border-box;
+
+   .fonts{
+font-family: 'Akaya Kanadaka', cursive;
+font-size:33;
+
 }
+
+
+    
+    .h1title{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50;
+    }
 
 body {
-  margin: 0;
-font-family: 'Akaya Kanadaka', cursive;
-}
-
-.header {
-  background-color: black;
-  padding: 0px;
-  text-align: center;
-}
-
-.nav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.nav a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.nav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.column {
-  float: left;
-  padding: 0px;
-}
-
-.column.side {
-  width: 22%;
-}
-
-.column.middle {
-  width: 78%;
-  background-color: black;
-  color: white;
-}
-
-.logout {
-background-color: red;
-border-radius: 25px;
+background-color:#000000;
 color: white;
-border: none;
-transition: 1s;
-font-size: 35px;
-padding: 10px 40px
+font-family: 'Barlow Condensed', sans-serif;
 }
 
-.logout:hover {
-background-color: #DE1F1F;
-color: white;
-border: none;
-font-size: 36px;
-padding: 15px 50px
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.footer {
-  background-color: black;
-  text-align: center;
-  padding: 10px;
-color: white;
-}
-
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
+#popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-  }
+    height: 100%;
+    background: rgba(25,25,25,.8);
+    z-index: 1001;
+}
+
+#popup {
+    width: 770px;
+    height: 400px;
+    background: #666666;
+    border: 3px solid #000;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    box-shadow: #64686e 0px 0px 3px 3px;
+    -moz-box-shadow: #64686e 0px 0px 3px 3px;
+    -webkit-box-shadow: #64686e 0px 0px 3px 3px;
+    position: relative;
+    top: 20%; left: 22%;
+  position: absolute;
+  top: 20%;
+  width: 56%;
+  text-align: center;
+  font-size: 10px;
+}
+
+.popup-login {
+background-color: #555;
+border: none;
+color: white;
+font-size: 26px;
+padding: 20px 42px;
+transition: 0.3s;
+border-radius: 30px;
+
+}
+
+.popup-login:hover {
+background-color: #556;
+color: white;
+font-size: 33px;
+padding: 15px 40px;
+}
+
+.x-button {
+background-color: #555;
+font-size: 30px;
+ color: red;
+ border: none;
+ border-radius: 30px;
+ padding: 6px 22px;
+transition: 0.3s;
+}
+
+.x-button:hover {
+background-color: #556;
+font-size: 30px;
+ color: red;
+ border: none;
+ border-radius: 30px;
+ padding: 10px 30px;
+transition: 0.3s;
+}
+
+
+    .container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 250;
+  height: 500;
+  text-align: center;
+  background: grey;
+  color: black;
+  font-size: 20px;
+  padding: 36px 46px
+}
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  padding: 50px;
+  width: 250;
+  height: 500;
+  text-align: center;
+  background: grey;
+  color: black;
+  font-size: 20px;
+  padding: 36px 46px
+}
+
+#logo-main {
+    content: url('https://cdobby69.github.io/HiddenWeb.uk/img/LogoWhite.png');
+transition: 1.3s;
+}
+
+#logo-main:hover {
+    content: url('https://cdobby69.github.io/HiddenWeb.uk/img/login.png');
+transition: 0.3s;
 }
 
 </style>
+
+<title>Hidden Web</title>
 </head>
 <body>
 
-<div class="header">
-<a href="home.html"><img src="https://cdobby69.github.io/HiddenWeb.uk/img/LogoWhite.png" width=160 height=130></a>
+<!--popup-->
+<div id="popup-background">
+    <div id="popup">
+        <center>
+            <h1 class="fonts">Welcome To The Hidden Web!</h1>
+            <h2 class="fonts">We reccomend loging in for the best possible expeirience</h2>
+
+<br />
+            <a href="pages/login.html"><button class="popup-login">Log In</button></a>
+<br />
+<br />
+<br />
+
+
+
+            <input class="x-button" type="submit" name="submit" value="X" onClick="PopUp()" />
+<br />
+<img src="https://cdobby69.github.io/HiddenWeb.uk/img/LogoTextWhite.png" width=250 height=95>
+        </center>
+    </div>
 </div>
 
-<div class="nav">
-  <a href="games">Home</a>
-  <a href="about.html">Games</a>
-  <a href="videos">Video</a>
-<a href="work">Work</a>
-<a href="credits.html">Credits</a>
-</div>
 
-<div class="row">
-  <div class="column side">
-    <center>
-<br />
-<br />
-<br />
-<a href="https://hiddenweb.uk"><button class="logout">Logout</button></a>
-<br />
-<br />
-<br />
-<br />
-<h1>Whats New</h1>
-<br />
-<br />
-<br />
-<br />
-<h1>News</h1>
+<!--content-->
 <center>
+<a class="h1title">Welcome To The Hidden Web</a>
+
+<div class="container">
+  <div class="topright">
+<h1>Latest News</h1>
+  <br />
+<h2>Logo Competion Winners:</h2>
+<h3>- Luca Waarrington Gremoli</h3>
+<h3>- Osacr Hill</h3>
   </div>
-  
-  <div class="column middle">
-<center>
-    <h1>Welcome To The Hidden Web</h1>
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+  <div class="topleft">
+      <h1>Whats New</h1>
+    <br />
+<h3>New wepage!</h3>
+      <br />
+        <br />
+          <br />
+  </div>
+   <div class="center"><a href="pages/login.html"><img id="logo-main" src="https://cdobby69.github.io/HiddenWeb.uk/img/LogoWhite.png" width= 600 height= 600></div></a>
+</div>
 
 </center>
-  </div>
-  
-  <div class="column side">
-    
-  </div>
-</div>
-
-
-
-</div>
-</div>
-  
 </body>
+</html>
