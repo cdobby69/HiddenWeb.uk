@@ -1,0 +1,171 @@
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
+<title>CSS Website Layout</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+font-family: 'Akaya Kanadaka', cursive;
+}
+
+.header {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.side {
+  width: 25%;
+}
+
+.column.middle {
+  width: 75%;
+  background-color: black;
+  color: white;
+}
+
+.logout {
+background-color: red;
+color: white;
+border: none;
+font-size: 36px;
+padding: 15px 70px
+}
+
+.logout:hover {
+background-color: #DE1F1F;
+color: white;
+border: none;
+font-size: 36px;
+padding: 10px 60px
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<a href="home.html"><img src="https://cdobby69.github.io/HiddenWeb.uk/img/LogoWhite.png" width=150 height=150></a>
+</div>
+
+<div class="nav">
+  <a href="games">Home</a>
+  <a href="about.html">Games</a>
+  <a href="videos">Video</a>
+<a href="work">Work</a>
+<a href="credits.html">Credits</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <center>
+<br />
+<br />
+<br />
+<a href="https://hiddenweb.uk"><button class="logout">Logout</button></a>
+<br />
+<br />
+<br />
+<br />
+<h1>Whats New</h1>
+<br />
+<br />
+<br />
+<br />
+<h1>News</h1>
+<center>
+  </div>
+  
+  <div class="column middle">
+<center>
+    <h1>Welcome To The Hidden Web</h1>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</center>
+  </div>
+  
+  <div class="column side">
+    
+  </div>
+</div>
+<div class="footer">
+<img src="https://cdobby69.github.io/HiddenWeb.uk/img/LogoTextWhite.png" width=200>
+</div>
+</div>
+  
+</body>
